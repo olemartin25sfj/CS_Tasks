@@ -2,22 +2,36 @@ public class Fundament : IFundament
 {
     public void CheckOddOrEven(double a)
     {
-        throw new NotImplementedException();
+        if (a % 2 == 0)
+        {
+            Console.WriteLine($"{a} is even.");
+        }
+        else
+            Console.WriteLine($"{a} is odd.");
+
+
     }
 
     public string GetAInterestingFact(string fact)
     {
-        throw new NotImplementedException();
+        return $"interesting fact: {fact}";
     }
 
     public void SumTwoNumbers()
     {
-        throw new NotImplementedException();
+        Console.Write("Enter first number");
+        double num1 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Enter second number");
+        double num2 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine($"Sum: {num1 + num2}");
+
+
     }
 
     public double SumTwoNumbersOfGivenType(double a, double b)
     {
-        throw new NotImplementedException();
+        return a + b;
+
     }
 
 
